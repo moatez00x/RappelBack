@@ -41,7 +41,7 @@ public class Client {
 
 	private String lastName;
 
-	private String title;
+	private Title title;
 
 	private UserLevel level;
 
@@ -49,6 +49,6 @@ public class Client {
 
 	@JsonIgnore
     @OneToOne(cascade = CascadeType.ALL)
-	private Account acount;
+	private Account account;
 
 }
